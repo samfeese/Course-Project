@@ -10,7 +10,7 @@ header {
 
   
 body{
-    background: #73BEFF;
+    background: #607180;
     margin: 0 auto 0 auto;
     width: 100%;
     text-align:center;
@@ -69,7 +69,7 @@ body{
   }
 
 .main{
-    background:#FFBC52;
+    background:#73BEFF;
     width:600px;
     border-radius:6px;
     margin: 0 auto 0 auto;
