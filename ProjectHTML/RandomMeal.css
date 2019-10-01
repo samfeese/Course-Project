@@ -1,65 +1,61 @@
 header {
-  color: white;
-  background-color: #607180;
-  text-align: center;
- 
-  width: 100%;
-  
-  
+    color: white;
+    background-color: darkgrey;
+    text-align: center;
+   
+    width: 100%;
+    
+    
 }
 
-  
   
 body{
-  background: #73BEFF;
-  margin: 0 auto 0 auto;
-  width: 100%;
-  text-align:center;
-  margin: 20px 0px 20px 0px;
+    background: cornflowerblue;
+    margin: 0 auto 0 auto;
+    width: 100%;
+    text-align:center;
+    margin: 20px 0px 20px 0px;
 }
-.nav-box{
-  width: 200px;
-  background-color: #2772B3;
-  text-align: center;
- 
 
-}
-.section{
-  background:#2772B3
+.nav-box{
+    width: 200px;
+    background-color: lightseagreen;
+    text-align: center;
+    border: lightblue 4px solid; 
+   
 
 }
 
 .vertical-menu {
-  width: 200px; /* set this as auto eventually */
-  padding: 30px;
-  border: #21BFB5 2px solid;
-  
-  
-}
+    width: 200px; /* set this as auto eventually */
+    padding: 30px;
+    
+    
+  }
 
-.vertical-menu a {
-  background-color: #eee; /* Grey background color */
-  color: black; /* Black text color */
-  display: block; /* Make the links appear below each other */
-  padding: 12px; /* Add some padding */
-  margin: 5px;
-  text-decoration: none; /* Remove underline from links */
-  text-align: center;
+  .vertical-menu a {
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    margin: 5px;
+    text-decoration: none; /* Remove underline from links */
+    text-align: center;
+    
+  }
   
-}
-
-.vertical-menu a:hover {
-  background-color: #ccc; /* Dark grey background on mouse-over */
-}
-
-.vertical-menu a.active {
-  background-color: #4CAF50; /* Add a green color to the "active/current" link */
-  color: white;
-}
+  .vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+  }
+  
+  .vertical-menu a.active {
+    background-color: #4CAF50; /* Add a green color to the "active/current" link */
+    color: white;
+  }
 
   
-  .main{
-    background:#FFBC52;
+  #main{
+    background:lightcoral;
     width:600px;
     border-radius:6px;
     margin: 0 auto 0 auto;
@@ -68,19 +64,19 @@ body{
     flex: 1;
 
   }
-  
-  .btn2{
+  .btn{
     background:#2ecc71;
     width:125px;
     padding-top:5px;
     padding-bottom:5px;
-    display:block;
-    
     color:white;
     border-radius:4px;
     border: #27ae60 1px solid;
     
-    margin: auto;
+    margin-top:20px;
+    margin-bottom:20px;
+   
+    margin-left:16px;
     font-weight:800;
     font-size:0.8em;
 }

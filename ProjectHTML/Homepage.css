@@ -1,6 +1,6 @@
 header {
     color: white;
-    background-color: #607180;
+    background-color: darkgrey;
     text-align: center;
    
     width: 100%;
@@ -10,7 +10,7 @@ header {
 
   
 body{
-    background: #73BEFF;
+    background: cornflowerblue;
     margin: 0 auto 0 auto;
     width: 100%;
     text-align:center;
@@ -19,20 +19,20 @@ body{
 
 .nav-box{
     width: 200px;
-    background-color: #2772B3;
+    background-color: lightseagreen;
     text-align: center;
    
 
 }
 .section{
-    background:#2772B3
+    background: blue
 
 }
 
 .vertical-menu {
     width: 200px; /* set this as auto eventually */
     padding: 30px;
-    border: #21BFB5 2px solid;
+    border: black 2px solid;
     
     
   }
@@ -63,19 +63,18 @@ body{
     border-radius:6px;
     margin: auto ;
     padding:10px 0px 70px 0px;
-    border: #21BFB5 4px solid; 
+    border: lightblue 4px solid; 
     text-align: center;
-    
+    flex: 1
   }
 
 .main{
-    background:#FFBC52;
+    background:lightcoral;
     width:600px;
     border-radius:6px;
     margin: 0 auto 0 auto;
     padding:0px 0px 70px 0px;
     border: lightblue 4px solid; 
-    flex: 1;
 
   }
 .section{
