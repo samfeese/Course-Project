@@ -1,0 +1,57 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+    
+        <!--Sidebar-->
+        <nav id="sidebar" style="text-align:center; background-color: lightgray">
+            <div class="sidebar-header">
+                <h3>Page Navigation</h3>
+            </div>
+
+            <ul class="list-unstyled components wrapperNav">
+                Dummy Header
+                <li class="active">
+                    <a class="btn-lg btn-block btn btn-dark" asp-controller="Home" asp-action="Random">Random</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Breakfast</a>
+                        </li>
+                        <li>
+                            <a href="#">Lunch</a>
+                        </li>
+                        <li>
+                            <a href="#">Dinner</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="btn-lg btn-block btn btn-dark" href="#">About</a>
+                </li>
+                <li>
+                    <a href="#pageSubmeu" data-toggle="collapse" aria-expanded="false" class="btn-lg btn-block btn btn-dark">Pages</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="btn-lg btn-dark btn-block btn" href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a class="btn-lg btn-dark btn-block btn" href="#">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+
+      
+   

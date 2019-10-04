@@ -10,7 +10,11 @@ header {
 
   
 body{
+<<<<<<< HEAD
     background: cornflowerblue;
+=======
+    background: #607180;
+>>>>>>> 25ca3dd046f404ff8d8d3d66575e4cfa703d5887
     margin: 0 auto 0 auto;
     width: 100%;
     text-align:center;
@@ -69,7 +73,11 @@ body{
   }
 
 .main{
+<<<<<<< HEAD
     background:lightcoral;
+=======
+    background:#73BEFF;
+>>>>>>> 25ca3dd046f404ff8d8d3d66575e4cfa703d5887
     width:600px;
     border-radius:6px;
     margin: 0 auto 0 auto;
