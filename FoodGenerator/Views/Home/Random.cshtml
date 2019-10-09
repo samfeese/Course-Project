@@ -4,35 +4,7 @@
 @{
 }
 
-<!--<div class="container ">
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
 
-    </div>
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-
-    </div>
-    <div class="card " style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-
-    </div>
-</div>-->
     <div class="container">
         <div class="row">
             <div class="col-sm">
@@ -52,7 +24,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Lunch</h5>
                         <p class="card-text">A Random, Standard Lunch Meal</p>
-                        <a href="#" class="btn btn-primary">RANDOMIZE</a>
+                        <a class="btn btn-primary" asp-controller="Random" asp-action="Lunch">RANDOMIZE</a>
                     </div>
                 </div>
             </div>
@@ -61,8 +33,8 @@
                     <img src="~/Pictures/steak.jpg" asp-append-version="true" class="card-img-top-alt" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Dinner</h5>
-                        <p class="card-text">Hearty and Delicious</p>
-                        <a href="#" class="btn btn-primary">RANDOMIZE</a>
+                        <p class="card-text">Hearty and Delicious Meals To End The Day</p>
+                        <a class="btn btn-primary" asp-controller="Random" asp-action="Dinner">RANDOMIZE</a>
                     </div>
                 </div>
             </div>

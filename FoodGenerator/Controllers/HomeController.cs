@@ -10,9 +10,12 @@ namespace FoodGenerator.Controllers
 {
     public class HomeController : Controller
     {
-        static string userName = "Sam";
+        public IActionResult Login()
+        {
+            return View();
+        }
 
-       public IActionResult Random()
+        public IActionResult Random()
         {
             return View();
         }

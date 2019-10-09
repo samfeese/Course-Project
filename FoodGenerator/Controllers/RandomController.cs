@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FoodGenerator.Controllers
 {
-    public class Random : Controller
+    public class RandomController : Controller
     {
         // GET: /<controller>/
         public IActionResult RandomBreakfast()
