@@ -10,6 +10,8 @@ namespace FoodGenerator.Controllers
 {
     public class RandomController : Controller
     {
+                
+        
         // GET: /<controller>/
         public IActionResult RandomBreakfast()
         {

@@ -1,13 +1,40 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿
+
 @{
+    ViewData["Title"] = "Breakfast Meals";
 }
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <div class="card">
+
+                @*<img src="~/Pictures/pancakes.jpg" asp-append-version="true" class="card-img-top-alt" alt="...">*@
+                <div class="card-body">
+                    <h5 class="card-title">Breakfast Choice 1</h5>
+                    <p class="card-text">Placeholder for Meal Name</p>
+                    <a class="btn btn-primary" asp-controller="Random" asp-action="RandomBreakfast">Recipe</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="card">
+                @*<img src="~/Pictures/sandwhich.jpg" asp-append-version="true" class="card-img-top-alt" alt="...">*@
+                <div class="card-body">
+                    <h5 class="card-title">Breakfast Choice 2</h5>
+                    <p class="card-text">Placeholder for Meal Name</p>
+                    <a class="btn btn-primary" asp-controller="Random" asp-action="Lunch">Recipe</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="card">
+                @*<img src="~/Pictures/steak.jpg" asp-append-version="true" class="card-img-top-alt" alt="...">*@
+                <div class="card-body">
+                    <h5 class="card-title">Breakfast Choice 3</h5>
+                    <p class="card-text">Placeholder for Meal Name</p>
+                    <a class="btn btn-primary" asp-controller="Random" asp-action="Dinner">Recipe</a>
+                </div>
+            </div>
         </div>
     </div>
+</div>
