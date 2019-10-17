@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using FoodGenerator.Model;
-using FoodGenerator.Models.Breakfast;
+using FoodGenerator.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -33,9 +32,9 @@ namespace FoodGenerator
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-            services.AddDbContext<FoodGeneratorModel>(options => options.UseSqlServer(Configuration["Server=(localdb)\\mssqllocaldb;Database=Food-Database;Trusted_Connection=True;"]));
 
-            services.AddTransient<IBreakfastMealRepository, TestBreakfastMealRepository>();
+            var connection = "Server=(localdb)\\mssqllocaldb;Database=HangryDatabsae;Trusted_Connection=True;MultipleActiveResultSets=true";
+            services.AddDbContext<HangryModel>(options => options.UseSqlServer(connection));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
@@ -49,7 +48,7 @@ namespace FoodGenerator
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseExceptionHandler(" / Home/Error");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
