@@ -14,7 +14,7 @@ namespace FoodGenerator.Controllers
         {
             return View();
         }
-
+       
         public IActionResult Random()
         {
             return View();

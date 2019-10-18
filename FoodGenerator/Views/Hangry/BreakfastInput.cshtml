@@ -1,0 +1,26 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h3><b>ADD BREAKFAST ITEM</b></h3>
+@using (Html.BeginForm("AddItem", "Hangry", FormMethod.Get))
+{
+    <table>
+        <tr>
+            <td>Enter Name: </td>
+            <td>@Html.TextBox("Name")</td>
+        </tr>
+        <tr>
+            <td>Enter Description: </td>
+            <td>@Html.TextBox("Description")</td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Submit"></td>
+        </tr>
+    </table>
+}
+<h4 style="color:purple">
+    ID: @ViewBag.Name<br />
+    Name: @ViewBag.Desc<br />
+</h4>

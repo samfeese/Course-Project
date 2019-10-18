@@ -9,16 +9,27 @@ namespace FoodGenerator.Controllers
 {
     public class HangryController : Controller
     {
-        private HangryModel _context;
+        private readonly HangryModel _context;
         public HangryController(HangryModel context)
         {
             _context = context;
         }
-
-        public IActionResult Index()
+        public IActionResult BreakfastInput()
         {
-            return View(_context.BreakfastMeals.ToList());
+            return View();
         }
+
+        [HttpGet]
+        public ActionResult AddItem(string Name, string Description)
+        {
+            var breakfastItem = new BreakfastMeal { Name = Name, Description = Description };
+            _context.Add(breakfastItem);
+            _context.SaveChanges();
+            ViewBag.Name = Name;
+            ViewBag.Desc = Description;
+            return View("BreakfastInput");
+        }
+       
 
 
     }

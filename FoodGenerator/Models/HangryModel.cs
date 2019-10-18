@@ -11,9 +11,10 @@ namespace FoodGenerator.Models
         public HangryModel(DbContextOptions<HangryModel> options)
             : base(options)
         { }
-        public DbSet<BreakfastMeal> BreakfastMeals {get;set;}
+        public DbSet<BreakfastMeal> BreakfastMeals { get; set; }
+
     }
-    
+
     public class LunchMeals
     {
         //Primary Key
@@ -21,7 +22,7 @@ namespace FoodGenerator.Models
 
         //Table items
         public string Name { get; set; }
-        public string Discription { get; set; }
+        public string Description { get; set; }
     }
     public class DinnerMeals
     {
@@ -30,6 +31,6 @@ namespace FoodGenerator.Models
 
         //Table items
         public string Name { get; set; }
-        public string Discription { get; set; }
+        public string Description { get; set; }
     }
 }
