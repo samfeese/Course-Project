@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+
 using System.Threading.Tasks;
 using FoodGenerator.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -13,8 +14,8 @@ namespace FoodGenerator.Controllers
 {
     public class RandomController : Controller
     {
-                
-        
+
+
         // GET: /<controller>/
         public IActionResult RandomBreakfast()
         {
@@ -22,7 +23,18 @@ namespace FoodGenerator.Controllers
             return View();
         }
 
-        
-       
+        //public void Selection1()
+        //{
+           
+        //    var rand = new Random();
+        //    var use = rand.Next(0, 1);
+
+        //    var selectionOne = from BreakfastMeal in HangryModel
+        //                       where BreakfastMeal.BreakfastMealId == use;
+
+
+        //}
+
+
     }
 }

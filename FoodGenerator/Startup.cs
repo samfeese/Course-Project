@@ -33,7 +33,7 @@ namespace FoodGenerator
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            var connection = "Server=(localdb)\\mssqllocaldb;Database=HangryDatabase;Trusted_Connection=True;MultipleActiveResultSets=true";
+            var connection = "Server=tcp:hangry-data.database.windows.net,1433;Database=coreDB;User ID=samfeese;Password=America1122;Encrypt=true;Connection Timeout=30;";
             services.AddDbContext<HangryModel>(options => options.UseSqlServer(connection));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
